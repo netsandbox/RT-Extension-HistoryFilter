@@ -1,0 +1,16 @@
+etc/HistoryFilter_Config.pm
+html/Callbacks/HistoryFilter/Ticket/Elements/ShowHistory/SkipTransaction
+html/Widgets/Form/Select
+inc/Module/Install.pm
+inc/Module/Install/Base.pm
+inc/Module/Install/Can.pm
+inc/Module/Install/Fetch.pm
+inc/Module/Install/Metadata.pm
+inc/Module/Install/ReadmeFromPod.pm
+inc/Module/Install/RTx.pm
+inc/Module/Install/Win32.pm
+inc/Module/Install/WriteAll.pm
+lib/RT/Extension/HistoryFilter.pm
+MANIFEST			This list of files
+META.yml
+README
