@@ -19,7 +19,7 @@ no_index:
     - html
     - inc
 requires:
-  perl: 5.8.0
+  perl: 5.8.3
 resources:
   license: http://dev.perl.org/licenses/
 version: 0.02

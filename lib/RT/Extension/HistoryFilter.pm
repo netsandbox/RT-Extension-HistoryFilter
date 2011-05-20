@@ -1,6 +1,6 @@
 package RT::Extension::HistoryFilter;
 
-use 5.008;
+use 5.008003;
 use strict;
 use warnings;
 
