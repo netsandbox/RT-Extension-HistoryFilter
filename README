@@ -2,7 +2,7 @@ NAME
     RT::Extension::HistoryFilter - Filter history by type on ticket display
     page
 
-SYNOPSIS
+DESCRIPTION
     This plugin filter the history on the ticket display page by transaction
     types that are defined in the user preferences. By default it shows only
     the transaction types create, correspond and comment that are defined in
@@ -15,20 +15,27 @@ SYNOPSIS
     extended version of RT::Extension::BriefHistory
 
 INSTALLATION
-    Installation instructions for RT-Extension-HistoryFilter:
+    perl Makefile.PL
+    make
+    make install
+    Edit your /opt/rt4/etc/RT_SiteConfig.pm
+        Add this line:
 
-            1. perl Makefile.PL
-            2. make
-            3. make install
-            4. Add 'RT::Extension::HistoryFilter' to @Plugins in /opt/rt3/etc/RT_SiteConfig.pm
-            5. Clear mason cache: rm -rf /opt/rt3/var/mason_data/obj
-            6. Restart webserver
+            Set(@Plugins, qw(RT::Extension::HistoryFilter));
+
+        or add "RT::Extension::HistoryFilter" to your existing @Plugins
+        line.
+
+    Clear your mason cache
+            rm -rf /opt/rt4/var/mason_data/obj/*
+
+    Restart your webserver
 
 AUTHOR
     Christian Loos <cloos@netsandbox.de>
 
-COPYRIGHT AND LICENCE
-    Copyright (C) 2010-2011, Christian Loos.
+LICENCE AND COPYRIGHT
+    Copyright (C) 2010-2013, Christian Loos.
 
     This library is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.

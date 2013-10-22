@@ -22,17 +22,13 @@ $RT::Config::META{'HistoryFilterTypes'} = {
         Multiple    => 1,
         Size        => 5,
         },
-    };
-
-1;
-
-__END__
+};
 
 =head1 NAME
 
 RT::Extension::HistoryFilter - Filter history by type on ticket display page
 
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 This plugin filter the history on the ticket display page by transaction types
 that are defined in the user preferences.
@@ -47,22 +43,37 @@ is an extended version of RT::Extension::BriefHistory
 
 =head1 INSTALLATION
 
-Installation instructions for RT-Extension-HistoryFilter:
+=over
 
-	1. perl Makefile.PL
-	2. make
-	3. make install
-	4. Add 'RT::Extension::HistoryFilter' to @Plugins in /opt/rt3/etc/RT_SiteConfig.pm
-	5. Clear mason cache: rm -rf /opt/rt3/var/mason_data/obj
-	6. Restart webserver
+=item perl Makefile.PL
+
+=item make
+
+=item make install
+
+=item Edit your /opt/rt4/etc/RT_SiteConfig.pm
+
+Add this line:
+
+    Set(@Plugins, qw(RT::Extension::HistoryFilter));
+
+or add C<RT::Extension::HistoryFilter> to your existing C<@Plugins> line.
+
+=item Clear your mason cache
+
+    rm -rf /opt/rt4/var/mason_data/obj/*
+
+=item Restart your webserver
+
+=back
 
 =head1 AUTHOR
 
 Christian Loos <cloos@netsandbox.de>
 
-=head1 COPYRIGHT AND LICENCE
+=head1 LICENCE AND COPYRIGHT
  
-Copyright (C) 2010-2011, Christian Loos.
+Copyright (C) 2010-2013, Christian Loos.
  
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
@@ -76,3 +87,5 @@ L<http://wiki.bestpractical.com/view/HideTransactions>
 L<http://lists.bestpractical.com/pipermail/rt-users/2010-May/064720.html>
 
 =cut
+
+1;
