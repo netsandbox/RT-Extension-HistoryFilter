@@ -1,4 +1,5 @@
 etc/HistoryFilter_Config.pm
+html/Callbacks/HistoryFilter/Elements/ShowHistory/SkipTransaction
 html/Callbacks/HistoryFilter/Ticket/Elements/ShowHistory/SkipTransaction
 html/Widgets/Form/Select
 inc/Module/Install.pm
@@ -14,5 +15,6 @@ inc/Module/Install/WriteAll.pm
 lib/RT/Extension/HistoryFilter.pm
 Makefile.PL
 MANIFEST			This list of files
+MANIFEST.SKIP
 META.yml
 README
