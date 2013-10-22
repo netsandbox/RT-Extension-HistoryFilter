@@ -81,8 +81,7 @@ $AlternativeLabel => loc('other...'),
 $Multiple         => 0,
 $Size             => 1,
 </%ARGS>
-% my $multi = $Multiple ? 'multiple="multiple"' : '';
-<select name="<% $Name %>" size="<% $Size %>" <% $multi |n %>>
+<select name="<% $Name %>" size="<% $Size %>" <% $Multiple ? 'multiple="multiple"' : '' |n %>>
 
 % if ( $Default ) {
 % my $selected = '';
