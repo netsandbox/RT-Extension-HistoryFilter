@@ -1,0 +1,16 @@
+<%INIT>
+return unless $Object->isa("RT::Ticket");
+return if $DisplayPath eq 'History.html';
+
+my @types = RT->Config->Get('HistoryFilterTypes', $session{'CurrentUser'});
+return unless $types[0];
+@types = @{ $types[0] };
+$$skip = 1
+    if not grep {$_ eq $Transaction->Type} @types;
+</%INIT>
+<%ARGS>
+$Object      => undef
+$DisplayPath => undef
+$Transaction => undef
+$skip        => undef
+</%ARGS>
