@@ -84,7 +84,7 @@ L<http://bestpractical.com/rt/>
 
 L<http://wiki.bestpractical.com/view/HideTransactions>
 
-L<http://lists.bestpractical.com/pipermail/rt-users/2010-May/064720.html>
+L<http://lists.bestpractical.com/pipermail/rt-users/2010-May/064649.html>
 
 =cut
 
