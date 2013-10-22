@@ -4,7 +4,7 @@ use 5.008003;
 use strict;
 use warnings;
 
-our $VERSION = '0.03';
+our $VERSION = '1.00';
 
 my @types = sort qw(Create Status CommentEmailRecord EmailRecord Correspond 
     Comment CustomField Untake Take Force Steal Give AddWatcher DelWatcher

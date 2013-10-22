@@ -1,0 +1,43 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.68.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 cb31d97bc12237bd69fb8dc72127e68edeb0c231 MANIFEST
+SHA1 1858b9b59492447fdd56c42bfc89004cf67a4b82 MANIFEST.SKIP
+SHA1 958cd4429fe95de61df70a06de9af56bafcce63c META.yml
+SHA1 b60eb3189bf6a07da8ac1f573baf076bf8f4e5f2 Makefile.PL
+SHA1 f0407c8019c9b1380e0fe1e2d1567584276aca61 README
+SHA1 dcab2b9a74a451da091a4e7a6e36a3b21bc2dce7 etc/HistoryFilter_Config.pm
+SHA1 e6065fb367c495076e6ddf7035838fb4e89f37cc html/Callbacks/HistoryFilter/Elements/ShowHistory/SkipTransaction
+SHA1 6729aca9b0c714aaa354217ea2ef079357688b37 html/Callbacks/HistoryFilter/Ticket/Elements/ShowHistory/SkipTransaction
+SHA1 eff32a82ef0082cb16d71a7c427a01a7b23f5c87 html/Widgets/Form/Select
+SHA1 8a924add836b60fb23b25c8506d45945e02f42f4 inc/Module/Install.pm
+SHA1 2d0fad3bf255f8c1e7e1e34eafccc4f595603ddc inc/Module/Install/Base.pm
+SHA1 f0e01fff7d73cd145fbf22331579918d4628ddb0 inc/Module/Install/Can.pm
+SHA1 7328966e4fda0c8451a6d3850704da0b84ac1540 inc/Module/Install/Fetch.pm
+SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
+SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
+SHA1 40df6f8d889b52eef379f04af6227f9302b23bf9 inc/Module/Install/RTx.pm
+SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
+SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
+SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
+SHA1 975a2257a9b6d263292a83225a5a78385dbfde7c lib/RT/Extension/HistoryFilter.pm
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iEYEARECAAYFAlJmcsMACgkQTwqgb7Yxh3zy0wCgh1ZT/25MWtbTGoXcsM+sWqeY
+vPQAn2uLJnQE6qtSWUDzhoIAaZJYkKEf
+=7bag
+-----END PGP SIGNATURE-----
