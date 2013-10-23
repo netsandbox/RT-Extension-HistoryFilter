@@ -1,3 +1,4 @@
+Changes
 etc/HistoryFilter_Config.pm
 html/Callbacks/HistoryFilter/Elements/ShowHistory/SkipTransaction
 html/Callbacks/HistoryFilter/Ticket/Elements/ShowHistory/SkipTransaction
