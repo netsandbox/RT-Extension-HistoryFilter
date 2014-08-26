@@ -1,5 +1,10 @@
 Revision history for RT::Extension::HistoryFilter
 
+1.01 2014-08-26
+
+ - update select widget
+ - get transaction types from BriefDescriptions hash instead of a static list
+
 1.00 2013-10-22
 
  - update select widget
