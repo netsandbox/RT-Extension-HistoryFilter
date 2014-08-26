@@ -12,9 +12,9 @@ my @types = sort qw(Create Status CommentEmailRecord EmailRecord Correspond
     AddReminder OpenReminder ResolveReminder);
 
 $RT::Config::META{'HistoryFilterTypes'} = {
-    Section         => 'RT::Extension::HistoryFilter',
+    Section         => 'Ticket display',
     Overridable     => 1,
-    SortOrder       => 1,
+    SortOrder       => 99,
     Widget          => '/Widgets/Form/Select',
     WidgetArguments => {
         Description => 'Transaction types that will be shown on the ticket display page', #loc
