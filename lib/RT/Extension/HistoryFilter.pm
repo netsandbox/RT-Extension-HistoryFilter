@@ -20,7 +20,6 @@ $RT::Config::META{'HistoryFilterTypes'} = {
         Description => 'Transaction types that will be shown on the ticket display page', #loc
         Values      => [ @types ],
         Multiple    => 1,
-        Size        => 5,
         },
 };
 
