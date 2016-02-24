@@ -1,6 +1,7 @@
 Changes
 etc/HistoryFilter_Config.pm
 html/Callbacks/HistoryFilter/Elements/ShowHistory/SkipTransaction
+html/Callbacks/HistoryFilter/Elements/ShowHistoryPage/SkipTransaction
 html/Callbacks/HistoryFilter/Ticket/Elements/ShowHistory/SkipTransaction
 html/Widgets/Form/Select
 inc/Module/Install.pm
