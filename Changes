@@ -1,5 +1,9 @@
 Revision history for RT::Extension::HistoryFilter
 
+2.01 2016-05-30
+ - update Module::Install::ReadmeFromPod
+ - support SelfService again
+
 2.00 2016-02-25
  - use the same callback for all supported RT version
  - RT 4.4 compatibility
