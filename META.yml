@@ -19,6 +19,7 @@ no_index:
     - etc
     - html
     - inc
+    - xt
   package:
     - RT::Transaction
 requires:
