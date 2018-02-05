@@ -20,6 +20,7 @@ $RT::Config::META{'HistoryFilterTypes'} = {
     Widget          => '/Widgets/Form/Select',
     WidgetArguments => {
         Description => 'Transaction types that will be shown on the ticket display page', #loc
+        Hints       => '(' . __PACKAGE__ . ')',
         Values      => [ @types ],
         Multiple    => 1,
         },
