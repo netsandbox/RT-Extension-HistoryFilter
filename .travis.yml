@@ -2,7 +2,6 @@ language: bash
 services: docker
 
 env:
-  - RT_VERSION=4.0
   - RT_VERSION=4.2
   - RT_VERSION=4.4
 
