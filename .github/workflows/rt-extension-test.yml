@@ -1,0 +1,31 @@
+---
+name: RT extension test
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  test:
+    name: Test RT
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        rt:
+          - '4.2'
+          - '4.4'
+
+    container: netsandbox/request-tracker:${{ matrix.rt }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: RT extension test
+        run: |
+          RELEASE_TESTING=1 perl Makefile.PL
+          make
+          make test
