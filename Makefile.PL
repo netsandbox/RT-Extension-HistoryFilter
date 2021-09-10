@@ -1,3 +1,4 @@
+BEGIN { push @INC, '.' }
 use inc::Module::Install;
 
 RTx('RT-Extension-HistoryFilter', { remove_files => 1 });
