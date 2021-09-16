@@ -67,6 +67,15 @@ For RT 4.0, add this line:
 
 or add C<RT::Extension::HistoryFilter> to your existing C<@Plugins> line.
 
+=item For RT 4.2.3 or older, install a patch
+
+This step is required B<only> for RT versions 4.2.3 or older. Versions
+4.2.4 and newer have the changes included in the patch.
+
+Apply the patch as follows:
+
+    patch -p1 -d /path/to/rt < patches/select-widget-add-multiple.patch
+
 =item Clear your mason cache
 
     rm -rf /opt/rt4/var/mason_data/obj/*
